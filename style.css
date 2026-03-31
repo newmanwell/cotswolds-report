@@ -108,3 +108,9 @@ footer {
     width: 200px;
   }
 }
+
+@media (min-width: 1338px) {
+  .tabs {
+    height: 80vh;
+  }
+}
