@@ -10,7 +10,6 @@ body {
 
 header {
   background: #e2e2db;
-  /* box-shadow: 10px 0px 7px #444258; */
   border-bottom-color: #444258;
   border-bottom: 1px;
 }
@@ -77,6 +76,23 @@ h1 {
 img {
   margin: 15px;
   border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #e2e2db;
+}
+
+.insta__logo {
+  height: 55px;
+  width: 55px;
+}
+
+.developer {
+  text-decoration: none;
+  color: #444258;
 }
 
 @media (max-width: 480px) {
