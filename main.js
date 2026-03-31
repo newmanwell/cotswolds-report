@@ -1,3 +1,11 @@
+const setYear = () => {
+  // adding the current year to the footer
+  const year = document.getElementById('year');
+  const thisYear = new Date().getFullYear().toString();
+  year.setAttribute('datetime', thisYear);
+  year.textContent = thisYear;
+}
+
 // Changes content when clicking on button/tab
 const setUpTabs = () => {
   document.querySelectorAll(".tabs__button").forEach(button => {
@@ -25,13 +33,17 @@ const setUpTabs = () => {
 // Invoke setUpTabs
 document.addEventListener("DOMContentLoaded", () => {
     setUpTabs();
+    setYear();
 
     // Activate first button/tab after loadiing
-
     document.querySelectorAll(".tabs").forEach(tabsContainer => {
       tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
   });
 });
+
+
+
+
 
 
 
