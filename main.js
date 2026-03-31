@@ -1,5 +1,3 @@
-alert('Warning! Holiday pictures ahead!');
-
 // Changes content when clicking on button/tab
 const setUpTabs = () => {
   document.querySelectorAll(".tabs__button").forEach(button => {
