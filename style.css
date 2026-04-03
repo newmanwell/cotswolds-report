@@ -17,17 +17,26 @@ header {
 h1 {
   margin: 0;
   padding: 30px;
+  color: #444258;
+  font-size: 42px;
+}
+
+h2 {
+  text-align: center;
+  color: #444258;
+  font-size: 24px;
 }
 
  h3 {
   text-align: center;
   color: white;
+  font-size: 18px;
  }
 
 .tabs {
   border: 1px solid #cccccc;
   display: flex;
-  background-image: url("images/quaint-cotswold-village.jpg");
+  background-image: url("images/the-cottage.jpeg");
   background-size: cover;
 }
 
@@ -73,9 +82,28 @@ h1 {
   flex-wrap: wrap;
 }
 
-img {
+.img__port {
   margin: 15px;
   border-radius: 5px;
+  height: 350px;
+  width: 225px;
+  transition: transform .2s;
+}
+
+.img__port:hover {
+    transform: scale(2.0);
+}
+
+.img__land {
+  margin: 15px;
+  border-radius: 5px;
+  width: 350px;
+  height: 225px;
+  transition: transform .2s;
+}
+
+.img__land:hover {
+    transform: scale(2.0);
 }
 
 footer {
@@ -109,8 +137,13 @@ footer {
   }
 }
 
-@media (min-width: 1338px) {
-  .tabs {
-    height: 80vh;
+@media (max-width: 570px) {
+  .tabs__content--active {
+    width: 100%;
+  }
+
+  .img__land {
+    width: 250px;
+    height: 175px;
   }
 }
