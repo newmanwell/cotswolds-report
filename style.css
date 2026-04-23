@@ -77,15 +77,18 @@ h2 {
 }
 
 .image__container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  column-count: 3;
+  column-gap: 15px;
 }
 
 .one__image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: rgba(68, 66, 88, .5);
   margin: 10px;
   border-radius: 5px;
+  break-inside: avoid;
 }
 
 .img__port {
@@ -152,5 +155,19 @@ footer {
   .img__land {
     width: 250px;
     height: 175px;
+  }
+}
+
+@media (max-width: 1400px) {
+    .image__container {
+      column-count: 2;
+    }
+  }
+
+@media (max-width: 1000px) {
+  .image__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
   }
 }
